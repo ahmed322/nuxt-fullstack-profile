@@ -8,7 +8,7 @@ useHead({
 		},
 	],
 	titleTemplate: (titleChunck) => {
-		return titleChunck ? `${titleChunck} - Ahmed-portfolio` : `Ahmed-portfolio`;
+		return titleChunck ? `${titleChunck}` : `Ahmed-portfolio`;
 	},
 });
 </script>
@@ -16,6 +16,7 @@ useHead({
 	<div>
 		<NuxtRouteAnnouncer />
 		<NuxtLayout>
+			<NuxtLoadingIndicator />
 			<NuxtPage />
 		</NuxtLayout>
 	</div>
