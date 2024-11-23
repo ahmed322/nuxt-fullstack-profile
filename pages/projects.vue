@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-	<ProjectsList />
+  <ProjectsList />
 </template>

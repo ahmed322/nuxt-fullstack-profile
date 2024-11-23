@@ -15,12 +15,15 @@ const { data, status, error } = await useFetch<any>("https://api.github.com/user
 // watch for errors
 watch(error, () => {
 	if (error.value) {
-		throw createError({ statusCode: 500, statusMessage: "Error fetching data from GitHub API." });
+		throw createError({
+			statusCode: 500,
+			statusMessage: "Error fetching data from GitHub API.",
+		});
 	}
 });
 
 // get only the repos that have a description
-let repos = computed(() => data.value?.filter((repo: any) => repo.description));
+const repos = computed(() => data.value?.filter((repo: any) => repo.description));
 </script>
 <template>
 	<div v-if="status === 'pending'">Loading...</div>

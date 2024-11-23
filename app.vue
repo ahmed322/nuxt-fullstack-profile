@@ -16,8 +16,14 @@ useHead({
 	<div>
 		<NuxtRouteAnnouncer />
 		<NuxtLayout>
-			<NuxtLoadingIndicator />
+			<NuxtLoadingIndicator error-color="red" />
 			<NuxtPage />
 		</NuxtLayout>
 	</div>
 </template>
+
+<style>
+body {
+	@apply bg-gray-100 text-gray-900 dark:bg-slate-800  dark:text-white;
+}
+</style>
