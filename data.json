@@ -1,0 +1,22 @@
+{
+	"links": [
+		{ "id": "headers", "depth": 2, "text": "Headers" },
+		{ "id": "this-is-a-heading-h2", "depth": 2, "text": "This is a Heading h2" },
+		{ "id": "emphasis", "depth": 2, "text": "Emphasis" },
+    {
+			"id": "lists",
+			"depth": 2,
+			"text": "Lists",
+			"children": [
+				{ "id": "unordered", "depth": 3, "text": "Unordered" },
+				{ "id": "ordered", "depth": 3, "text": "Ordered" }
+			]		
+		},
+		{ "id": "images", "depth": 2, "text": "Images" },
+		{ "id": "links", "depth": 2, "text": "Links" },
+		{ "id": "blockquotes", "depth": 2, "text": "Blockquotes" },
+		{ "id": "tables", "depth": 2, "text": "Tables" },
+		{ "id": "blocks-of-code", "depth": 2, "text": "Blocks of code" },
+		{ "id": "inline-code", "depth": 2, "text": "Inline code" }
+	]
+}
