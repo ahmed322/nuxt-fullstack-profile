@@ -1,5 +1,9 @@
 <script setup lang="ts">
 let route = useRoute();
+
+
+
+
 </script>
 <template>
 	<div class="relative">
@@ -8,13 +12,6 @@ let route = useRoute();
 				<section class="col-span-9">
 					<ContentRenderer :value="doc" />
 				</section>
-				<!-- 
-					1- style the position
-					2- style the size
-					3- style the color
-					4- style the levels
-					5- fix scroll
-				-->
 				<aside class="not-prose sticky top-6 col-span-3 h-fit p-1" v-if="doc.body.toc.links">
 					<ul>
 						<li v-for="header in doc.body.toc.links" :key="header.id">

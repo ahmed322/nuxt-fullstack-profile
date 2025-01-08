@@ -16,7 +16,7 @@ useHead({
 	<div>
 		<NuxtRouteAnnouncer />
 		<NuxtLayout>
-			<NuxtLoadingIndicator error-color="red" />
+			<NuxtLoadingIndicator />
 			<NuxtPage />
 		</NuxtLayout>
 	</div>
@@ -25,5 +25,25 @@ useHead({
 <style>
 body {
 	@apply bg-gray-100 text-gray-900 dark:bg-slate-800  dark:text-white;
+}
+
+/* we will explain what these classes do next! */
+/* .page-enter-active,
+.page-leave-active {
+	transition: opacity 1s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+} */
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 0.5s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
 }
 </style>
